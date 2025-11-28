@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Courses</title>
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <section class="courses">
+      <header class="courses__header">
+        <h6 class="courses__title">ENJOY YOUR STUDYING!</h6>
+        <h1 class="courses__subtitle">Our online courses</h1>
+      </header>
+
+      <div class="courses__controls">
+        <div class="courses__filters">
+          <button
+            class="courses__filter-btn courses__filter-btn--active"
+            data-category="all"
+          >
+            All
+          </button>
+          <button class="courses__filter-btn" data-category="Marketing">
+            Marketing
+          </button>
+          <button class="courses__filter-btn" data-category="Management">
+            Management
+          </button>
+          <button class="courses__filter-btn" data-category="HR & Recruiting">
+            HR & Recruiting
+          </button>
+          <button class="courses__filter-btn" data-category="Design">
+            Design
+          </button>
+          <button class="courses__filter-btn" data-category="Development">
+            Development
+          </button>
+        </div>
+
+        <div class="courses__search">
+          <input
+            type="text"
+            class="courses__search-input"
+            placeholder="Search course..."
+          />
+          <img
+            src="assets/svg/search.svg"
+            alt="Search"
+            class="courses__search-icon"
+          />
+        </div>
+      </div>
+
+      <div class="courses__grid" id="courses-grid">
+      </div>
+    </section>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
